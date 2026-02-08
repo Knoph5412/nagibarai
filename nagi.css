@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+}
+header{
+  text-align: center;
+  color:black;
+  border: 1px solid red;
+  background-color: red;
+  padding: 10px;
+}
+.aaa{
+  background-image: url(NAGIYANKI-.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-color: black;
+}
+.ccc a{
+  text-decoration: none;
+  color: white;
+}
+header p{
+  text-align: center;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px;
+  width: 150px;
+}
+header .ccc{
+  display: flex;
+  justify-content: center;
+}
+.bbb{
+  text-align: center;
+  background-color: black;
+}
+.bbb img{
+  border: 30px solid purple;
+  width: 30%;
+  height: 30%;
+}
+.ttt a{
+  text-align: center;
+  text-decoration: none;
+  color: pink;
+  font-size: 25px;
+  border: 5px solid white;
+  padding: 10px;
+  background-color: white;
+}
