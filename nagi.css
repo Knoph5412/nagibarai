@@ -27,6 +27,9 @@ header p{
   padding: 10px;
   margin: 5px;
   width: 150px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
 }
 header .ccc{
   display: flex;
@@ -34,19 +37,20 @@ header .ccc{
 }
 .bbb{
   text-align: center;
-  background-color: black;
+  background-color: white;
 }
-.bbb img{
-  border: 30px solid purple;
-  width: 30%;
-  height: 30%;
+.bbb video{
+  border: 10px solid;
+  border-image: linear-gradient(to right, #7f7fff, #7fff7f) 1;
+  width: 60%;
+  height: 60%;
 }
 .ttt a{
   text-align: center;
   text-decoration: none;
   color: pink;
   font-size: 25px;
-  border: 5px solid white;
+  border: 5px solid black
   padding: 10px;
-  background-color: white;
+  background-color: black;
 }
