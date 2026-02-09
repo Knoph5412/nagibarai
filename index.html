@@ -7,20 +7,63 @@
   </head>
   <body>
 
-    <header>
-      <div class="logo">
+    <header class="hhh">
+      <div class="gogo">
         <img src="logo.png" alt="">
+      </div>
+      <div class="ooo">
+        <audio src="aimusicer_music_1769799578330.mp3" type="audio/mpeg"></audio>
+        <button id="btn_play">再生</button>
+        <button id="btn_pause">一時停止</button>
+        <button id="btn_mute">消音</button>
+        <input type="range" id="volume" value="0.5" min="0.0" max="1.0" step="0.1">
       </div>
       <div class="ccc">
         <a href="index.html"><p>TOP</p></a>
         <a href="osie.html"><p>DOCTRINE</p></a>
         <a href="vrc.html"><p>VRC</p></a>
         <a href="disco.html"><p>SNS</p></a>
+        </div>
     </header>
+
     <div class="aaa">
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <audio src="aimusicer_music_1769799578330.mp3" autoplay loop></audio>
+    <br><br><br><br><br><br><br>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', function(){
+  const btn_play = document.getElementById("btn_play");
+  const btn_pause = document.getElementById("btn_pause");
+  const btn_mute = document.getElementById("btn_mute");
+  const slider_volume = document.getElementById("volume");
+  const audioElement = document.querySelector("audio");
+
+  audioElement.volume = slider_volume.value;
+
+  btn_play.addEventListener("click", e => {
+    audioElement.play();
+  });
+
+  btn_pause.addEventListener("click", e => {
+    audioElement.pause();
+  });
+
+  btn_mute.addEventListener("click", e => {
+
+    if( audioElement.muted ) {
+      audioElement.muted = false;
+      btn_mute.textContent = "消音";
+    } else {
+      audioElement.muted = true;
+      btn_mute.textContent = "消音解除";
+    }
+  });
+
+  slider_volume.addEventListener("input", e => {
+    audioElement.volume = slider_volume.value;
+  });
+});
+    </script>
     </div>
   </body>
 </html>

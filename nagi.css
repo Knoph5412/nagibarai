@@ -2,6 +2,7 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 .logo img{
   height: 300px;
@@ -21,7 +22,7 @@ header{
 .aaa{
   background-image: url(NAGIYANKI-.png);
   background-repeat: no-repeat;
-  background-size: 43%;
+  background-size: 35%;
   background-position: center;
   background-color: black;
 }
@@ -81,7 +82,7 @@ main{
   max-width:900px;
   margin:120px auto;
   padding:70px 90px;
-  background:rgba(0,0,0,0.65);  
+  background:rgba(0,0,0,0.65);
   backdrop-filter:blur(3px);
   border:1px solid #222;
   box-shadow:0 0 80px rgba(255,0,0,0.08);
@@ -132,3 +133,83 @@ main li:before{
         transparent 4px
     );
 }
+.ooo{
+  float: right;
+}
+.hhh{
+  padding: 0px 150px;
+  background:black;
+  padding:20px 40px;
+  display:flex;
+  flex-direction:column;
+}
+.logo{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.gogo img{
+  height: 250px;
+}
+.sns-header{
+    text-align:center;
+    padding:80px 20px 40px;
+}
+.sns-header h1{
+    font-size:36px;
+    letter-spacing:0.2em;
+}
+.sns-header p{
+    color:#aaa;
+}
+.sns-container{
+    max-width:1100px;
+    margin:40px auto 120px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:40px;
+    padding:0 40px;
+    background-color: black;
+}
+.card{
+    text-decoration:none;
+    color:white;
+    padding:45px 30px;
+    border:1px solid #333;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(6px);
+    text-align:center;
+    transition:0.25s;
+    position:relative;
+}
+.card .icon{
+    font-size:40px;
+    margin-bottom:20px;
+}
+.card h2{
+    margin:10px 0;
+    font-size:24px;
+}
+.card p{
+    color:#bbb;
+    margin-bottom:25px;
+}
+.card span{
+    display:inline-block;
+    border:1px solid #888;
+    padding:10px 26px;
+    font-size:14px;
+    letter-spacing:0.1em;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+    border-color:crimson;
+    box-shadow:0 0 40px rgba(255,0,0,0.25);
+}
+.card:hover span{
+    background:crimson;
+    border-color:crimson;
+}
+.discord:hover{ box-shadow:0 0 40px rgba(88,101,242,0.35); }
+.twitter:hover{ box-shadow:0 0 40px rgba(29,161,242,0.35); }
+.tiktok:hover{ box-shadow:0 0 40px rgba(255,0,80,0.35); }
