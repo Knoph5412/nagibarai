@@ -1,13 +1,10 @@
 @charset "UTF-8";
 body{
   margin: 0;
+  padding: 0;
 }
-.logo{
-  background-image: url(logo.png);
-  background-size: 30%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;
+.logo img{
+  height: 300px;
 }
 header{
   text-align: center;
@@ -15,6 +12,11 @@ header{
   border: 1px solid black;
   padding: 10px;
   background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+  background: black;
 }
 .aaa{
   background-image: url(NAGIYANKI-.png);
@@ -40,7 +42,9 @@ header p{
 }
 header .ccc{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
 }
 .bbb{
   text-align: center;
@@ -65,4 +69,66 @@ header .ccc{
 .img{
   width: 5%;
   height: 5%;
+}
+main{
+  max-width:900px;
+  margin:120px auto;
+  padding:60px 80px;
+  border:1px solid #333;
+  background:linear-gradient(#050505,#000);
+  box-shadow:0 0 40px rgba(255,0,0,0.15);
+  color: white;
+  max-width:900px;
+  margin:120px auto;
+  padding:70px 90px;
+  background:rgba(0,0,0,0.65);  
+  backdrop-filter:blur(3px);
+  border:1px solid #222;
+  box-shadow:0 0 80px rgba(255,0,0,0.08);
+}
+main h1{
+  text-align:center;
+  font-size:32px;
+  color:#fff;
+  margin-bottom:60px;
+  letter-spacing:0.2em;
+}
+main h2{
+  margin-top:70px;
+  margin-bottom:25px;
+  font-size:22px;
+  color:#fff;
+  border-left:4px solid crimson;
+  padding-left:15px;
+}
+main p{
+  margin-bottom:28px;
+  text-indent:1em;
+}
+main ul{
+  list-style:none;
+  padding-left:20px;
+}
+main li{
+  margin:12px 0;
+  position:relative;
+  padding-left:20px;
+}
+main li:before{
+  content:"◆";
+  position:absolute;
+  left:0;
+  color:crimson;
+  text-align: center;
+}
+.lll{
+    background:
+    radial-gradient(circle at center, #111 0%, #000 70%),
+    repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.02) 0px,
+        rgba(255,255,255,0.02) 1px,
+        transparent 1px,
+        transparent 4px
+    );
 }
